@@ -1,12 +1,7 @@
 import PropTypes from "prop-types";
 import "./ExpenseItem.css";
 
-function ExpenseItem() {
-  const description = "Car Insurance";
-  const price = 294.67;
-  const type = "Car";
-  const date = new Date(2022, 6, 22);
-
+function ExpenseItem({ description, price, type, date }) {
   return (
     <div className="expense-item">
       <div className="expense-item__icon"></div>
